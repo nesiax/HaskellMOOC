@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c7999e3e36cc3ec51a28e031ed2e0cdc07a94225c6688d477ddc70617a9d1f3d
+
+name:           BullsAndCows
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/nesiax/BullsAndCows#readme>
+homepage:       https://github.com/nesiax/BullsAndCows#readme
+bug-reports:    https://github.com/nesiax/BullsAndCows/issues
+author:         Nestor A. Diaz
+maintainer:     nestor@tiendalinux.com
+copyright:      2021 Nestor A. Diaz
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/nesiax/BullsAndCows
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_BullsAndCows
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable BullsAndCows-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_BullsAndCows
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      BullsAndCows
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite BullsAndCows-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_BullsAndCows
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      BullsAndCows
+    , base >=4.7 && <5
+  default-language: Haskell2010
