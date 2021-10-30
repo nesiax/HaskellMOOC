@@ -12,6 +12,8 @@ stack exec BullsAndCows-exe
 ```
 
 ## to run as a script
+Include src/ directory
+Include `random` package
 ```
 stack --resolver lts-12.21 script --ghc-options -isrc --package random -- app/Main.hs
 ```
@@ -29,5 +31,5 @@ stack setup
 
 ## alternatives:
 ```
-stack ghci --package random app/Main.hs src/Lib.hs
+stack ghci
 ```
