@@ -1,2 +1,11 @@
 .stack-work/
 *~
+
+# emacs
+*~
+\#*\#
+.\#*
+TAGS
+
+# stack
+stack.yaml.lock
