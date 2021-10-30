@@ -33,6 +33,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , random
   default-language: Haskell2010
 
 executable BullsAndCows-exe
@@ -45,6 +46,7 @@ executable BullsAndCows-exe
   build-depends:
       BullsAndCows
     , base >=4.7 && <5
+    , random
   default-language: Haskell2010
 
 test-suite BullsAndCows-test
@@ -58,4 +60,5 @@ test-suite BullsAndCows-test
   build-depends:
       BullsAndCows
     , base >=4.7 && <5
+    , random
   default-language: Haskell2010
