@@ -36,3 +36,14 @@ stack setup
 ```
 stack ghci
 ```
+
+## running:
+
+```
+The secret code is: 8409
+Enter your guess: 8408
+Try: 1, Bulls: 3, Cows: 1
+Enter your guess: 8409
+Try: 2, Bulls: 4, Cows: 0
+You guessed !
+```
