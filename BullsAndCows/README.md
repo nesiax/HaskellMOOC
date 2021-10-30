@@ -27,7 +27,7 @@ or altenatively:
 stack setup
 ```
 
-## Others that work:
+## alternatives:
 ```
 stack ghci --package random app/Main.hs src/Lib.hs
 ```
