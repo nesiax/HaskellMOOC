@@ -13,7 +13,7 @@ stack exec BullsAndCows-exe
 
 ## to run as a script
 ```
-stack --resolver lts-12.21 script --ghc-options -isrc -- app/Main.hs
+stack --resolver lts-12.21 script --ghc-options -isrc --package random -- app/Main.hs
 ```
 
 or altenatively:
