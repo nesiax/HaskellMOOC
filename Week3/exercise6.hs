@@ -22,7 +22,7 @@ spells lst = map spell lst
 addand :: [[Char]] -> [[Char]]
 addand lst =
   if (length lst > 1) then
-    (foldr (\x xs -> ( if null xs then ("and "++x) else ""++x ):xs) [] lst)
+    (foldr (\x xs -> ( if null xs then ("and " ++ x) else x ):xs) [] lst)
   else lst
 
 -- addcomma: add a comma after [1..] elements of the list
@@ -31,7 +31,7 @@ addcomma lst = foldl (\xs x -> xs ++ (if null xs then [x] else [", " ++ x])) [] 
 
 -- speller: beauty print all the above.
 speller :: [[Char]] -> [Char]
-speller lst = foldl (\x xs -> x ++ xs) [] (addcomma $ addand $ spells lst)
+speller lst = foldl (\x xs -> x ++ xs) [] ((addcomma . addand . spells) lst)
 
 main :: IO ()
 main = do

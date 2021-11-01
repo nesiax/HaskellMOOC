@@ -38,5 +38,9 @@ main = do
   putStrLn (
     foldl (\xs x -> xs ++ [x]) "" "A String"
     )
+
   putStrLn (show (foldr (/) 1 [2,4,8]))
+  putStrLn (show (foldr (\elem accum -> elem / accum) 1 [2,4,8]))
+
   putStrLn (show (foldl (/) 16 [8,4,2,1]))
+  putStrLn (show (foldl (\accum elem -> accum / elem) 16 [8,4,2,1]))
